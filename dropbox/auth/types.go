@@ -24,7 +24,7 @@ package auth
 import (
 	"encoding/json"
 
-	"github.com/dropbox/dropbox-sdk-go-unofficial/dropbox"
+	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
 )
 
 // AccessError : Error occurred because the account doesn't have permission to

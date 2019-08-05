@@ -28,10 +28,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/dropbox/dropbox-sdk-go-unofficial/dropbox"
-	"github.com/dropbox/dropbox-sdk-go-unofficial/dropbox/async"
-	"github.com/dropbox/dropbox-sdk-go-unofficial/dropbox/auth"
-	"github.com/dropbox/dropbox-sdk-go-unofficial/dropbox/file_properties"
+	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
+	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/async"
+	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/auth"
+	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/file_properties"
 )
 
 // Client interface describes all routes in this namespace
@@ -3911,10 +3911,19 @@ func (dbx *apiImpl) UploadSessionFinishBatch(arg *UploadSessionFinishBatchArg) (
 
 	dbx.Config.LogDebug("body: %s", body)
 	if resp.StatusCode == http.StatusOK {
-		err = json.Unmarshal(body, &res)
+		type FixResp struct {
+			Tag        string `json:".tag"`
+			AsyncJobID string `json:"async_job_id"`
+		}
+		var fix FixResp
+		err = json.Unmarshal(body, &fix)
 		if err != nil {
 			return
 		}
+		if res == nil  {
+			res = &UploadSessionFinishBatchLaunch{}
+		}
+		res.AsyncJobId = fix.AsyncJobID
 
 		return
 	}
