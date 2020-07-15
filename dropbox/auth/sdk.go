@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox"
 )
 
 // AuthAPIError wraps AuthError

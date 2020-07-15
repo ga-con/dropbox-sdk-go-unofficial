@@ -21,7 +21,7 @@
 // Package team_policies : has no documentation (yet)
 package team_policies
 
-import "github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
+import "github.com/toanqng/dropbox-sdk-go-unofficial/dropbox"
 
 // CameraUploadsPolicyState : has no documentation (yet)
 type CameraUploadsPolicyState struct {

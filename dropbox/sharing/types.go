@@ -26,11 +26,11 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/files"
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/seen_state"
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/team_common"
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/users"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox/files"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox/seen_state"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox/team_common"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox/users"
 )
 
 // AccessInheritance : Information about the inheritance policy of a shared

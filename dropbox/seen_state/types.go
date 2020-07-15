@@ -21,7 +21,7 @@
 // Package seen_state : has no documentation (yet)
 package seen_state
 
-import "github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
+import "github.com/toanqng/dropbox-sdk-go-unofficial/dropbox"
 
 // PlatformType : Possible platforms on which a user may view content.
 type PlatformType struct {

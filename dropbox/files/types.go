@@ -26,8 +26,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox/file_properties"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox/file_properties"
 )
 
 // GetMetadataArg : has no documentation (yet)

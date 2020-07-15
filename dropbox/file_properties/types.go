@@ -48,7 +48,7 @@ package file_properties
 import (
 	"encoding/json"
 
-	"github.com/ga-con/dropbox-sdk-go-unofficial/dropbox"
+	"github.com/toanqng/dropbox-sdk-go-unofficial/dropbox"
 )
 
 // AddPropertiesArg : has no documentation (yet)
