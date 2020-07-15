@@ -11,7 +11,7 @@ An **UNOFFICIAL** Go SDK for integrating with the Dropbox API v2. Tested with Go
 
 ### Uh OK, so why are you releasing this?
 
-  * the SDK, while unofficial, _is_ usable. See [dbxcli](https://github.com/dropbox/dbxcli) for an example application built using the SDK
+  * the SDK, while unofficial, _is_ usable. See [dbxcli](https://github.com/toanqng/dbxcli) for an example application built using the SDK
   * we would like to get feedback from the community and evaluate the level of interest/enthusiasm before investing into official supporting one more SDK
 
 ## Installation
@@ -88,7 +88,7 @@ Please read the [API docs](https://www.dropbox.com/developers/documentation/http
 
 ## Code Generation
 
-This SDK is automatically generated using the public [Dropbox API spec](https://github.com/dropbox/dropbox-api-spec) and [Stone](https://github.com/dropbox/stone). See this [README](https://github.com/toanqng/dropbox-sdk-go-unofficial/blob/master/generator/README.md)
+This SDK is automatically generated using the public [Dropbox API spec](https://github.com/toanqng/dropbox-api-spec) and [Stone](https://github.com/toanqng/stone). See this [README](https://github.com/toanqng/dropbox-sdk-go-unofficial/blob/master/generator/README.md)
 for more details on how code is generated. 
 
 ## Caveats
